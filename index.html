@@ -1,16 +1,30 @@
 <!DOCTYPE HTML>
 <html>
-<body>
+
+<head>
+<title>ImageMap Javascript Processor</title>
+</head>
+
+
+<body onload="processJavascript();">
+
 <img src="https://www.designalabama.org/wp-content/uploads/2017/02/Illustrative-Plan-170126.jpg"
 width="3369"
 height="2379"
 alt="Image for Image Map"
 usemap="#myImageMap" />
+
+
+
+
 <map name="myImageMap">
+
 <area shape="rect"
+class="blue"
+onclick="alert('rock')
 coords="2280,1170,2428,1234"
 alt="Rockefeller Hall"
-href="https://www.tuskegee.edu/housing-and-residence-life/rockefeller-hall" />
+href="#" />
 
 
 <area shape="rect"
@@ -18,12 +32,31 @@ coords="2672,1152,2880,1258"
 alt="Brimmer Hall"
 href="http://www.tuskegee.edu/programs-courses/colleges-schools/cbis" />
 
+
+
+
+
+
+
 <!--
 
 <area shape="circle"
 coords="125,60,8"
 alt="Region 3"
 href="http://java2s.com" />
+
+<script>
+    var result = new Date().toString();
+    var appInventorInput = window.AppInventor.getWebViewString();
+        function processJavascript() {
+            document.write( "WebView InputString received FROM app:
+" + appInventorInput );
+            result = "Rock";
+            document.write( "<p/>WebView InputString sending BACK TO app:<br/>" + result );
+        window.AppInventor.setWebViewString( result );
+    }
+</script>
+
 -->
 
 </map>
