@@ -8,9 +8,9 @@
 
       <script type = "text/JavaScript">
 	      
-         function Hello(name) {
+         function SendToApp(name) {
 	    alert("This is " + name);
-	    window.AppInventor.setWebViewString("Rock");      
+	    window.AppInventor.setWebViewString(name);      
 		 
 		 
          } 
@@ -33,16 +33,14 @@ usemap="#myImageMap" />
 <map name="myImageMap">
 
 <area shape="rect"
-name1 = "Rock";
-onclick="Hello(name1);"
+onclick="SendToApp(Rock);"
 coords="2280,1170,2428,1234"
 alt="Rockefeller Hall"
 href="" />
 
 
 <area shape="rect"
-name = "Brimmer";
-onclick="Hello(name);"
+onclick="SendToApp('Brimmer');"
 coords="2672,1152,2880,1258"
 alt="Brimmer Hall"
 href="" />
