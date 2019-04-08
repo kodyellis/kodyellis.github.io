@@ -7,8 +7,8 @@
 <title>ImageMap Javascript Processor</title>
 
       <script type = "text/JavaScript">
-         function Hello() {
-            alert("This is Brimmer");
+         function Hello(name) {
+            alert("This is " + name");
          }
       </script>
 	  
@@ -29,10 +29,10 @@ usemap="#myImageMap" />
 <map name="myImageMap">
 
 <area shape="rect"
-onclick="Hello();"
+onclick="Hello('Rock');"
 coords="2280,1170,2428,1234"
 alt="Rockefeller Hall"
-href="https://kodyellis.github.io/" />
+href="#" />
 
 
 <area shape="rect"
