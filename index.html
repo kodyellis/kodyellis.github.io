@@ -7,9 +7,11 @@
 <title>ImageMap Javascript Processor</title>
 
       <script type = "text/JavaScript">
+	      var name1 = "sample";
+	      
          function Hello(name) {
-            
-	    window.AppInventor.setWebViewString('Rocke');      
+            document.write("<p/> rock message where<br/>");
+	    window.AppInventor.setWebViewString("Rock");      
 		 
          } 
       </script>
@@ -31,7 +33,8 @@ usemap="#myImageMap" />
 <map name="myImageMap">
 
 <area shape="rect"
-onclick="Hello('Rock');"
+name1 = "Rock";
+onclick="Hello(name1);"
 coords="2280,1170,2428,1234"
 alt="Rockefeller Hall"
 href="" />
@@ -41,7 +44,7 @@ href="" />
 onclick="Hello('Brimmer');"
 coords="2672,1152,2880,1258"
 alt="Brimmer Hall"
-href="https://kodyellis.github.io/" />
+href="" />
 
 
 
